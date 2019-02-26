@@ -5,6 +5,15 @@ html > body {
     flex-direction: column;
 }
 
+body {
+  background-image: url('background.png');no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #333;
+}
+
 #my-address {
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -12,7 +21,8 @@ html > body {
 }
 
 .my-address-block {
-    background-color: #F8F9FA;
+    /* background-color: #F8F9FA; */
+    background: rgba(255,255,255,0.8);
     padding: 0.6rem;
     white-space: nowrap;
     padding-left: 0;
@@ -21,7 +31,8 @@ html > body {
 }
 
 .get-new-address-col {
-  background-color: #F8F9FA;
+  /* background-color: #F8F9FA; */
+  background: rgba(255,255,255,0.8);
   text-align: center;
   padding: 0.5rem;
 }
@@ -62,7 +73,8 @@ main {
 
 footer {
     padding-top: 1rem;
-    background-color: #eeeeee;
+    background-color: #eee;
+    border-top: 2px solid #333;
 }
 
 .open-collapse-button {
@@ -96,6 +108,17 @@ footer {
 }
 
 .email-body {
+  min-height: 100px;
+  padding: 5px;
+  border-radius: 0.25rem;
+  background: rgba(255,255,255,0.8);
+
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-left: 15px;
 }
 
 .alert-fixed {

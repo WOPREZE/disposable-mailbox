@@ -202,21 +202,26 @@ function niceDate($date) {
                 <div id="mail-box-<?php echo $email->id ?>" role="tabpanel" aria-labelledby="headingCollapse1"
                      class="card-collapse collapse"
                      aria-expanded="true">
-                    <div class="card-body">
-                        <div class="card-block email-body">
-                            <div class="float-right primary">
-                                <a class="btn btn-outline-primary btn-sm" download="true"
-                                   role="button"
-                                   href="<?php echo "?action=download_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    Download
-                                </a>
 
-                                <a class="btn btn-outline-danger btn-sm"
-                                   role="button"
-                                   href="<?php echo "?action=delete_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    Delete
-                                </a>
-                            </div>
+                    <div class="card-body">
+
+                        <div class="card-block email-body">
+
+                          <div class="float-right primary">
+
+                              <a class="btn btn-outline-primary btn-sm" download="true"
+                                 role="button"
+                                 href="<?php echo "?action=download_email&email_id=$safe_email_id&address=$user->address" ?>">
+                                  Download
+                              </a>
+
+                              <a class="btn btn-outline-danger btn-sm"
+                                 role="button"
+                                 href="<?php echo "?action=delete_email&email_id=$safe_email_id&address=$user->address" ?>">
+                                  Delete
+                              </a>
+
+                          </div>
 
                             <?php
                             $safeHtml = $purifier->purify($email->textHtml);
@@ -314,10 +319,12 @@ function niceDate($date) {
         </div>
 
         <p>
+          <!--
             <small>Powered by
                 <a
                         href="https://github.com/synox/disposable-mailbox"><strong>synox/disposable-mailbox</strong></a>
             </small>
+          -->
         </p>
     </div>
 </footer>
