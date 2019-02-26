@@ -5,7 +5,7 @@ A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelop
 
 **Demo**: [Asscape](https://asscape.com/) 
 
-![Screenshot](screenshot_example.png)
+![Screenshot](screenshot.jpg)
 
 
 ## Features
